@@ -8,11 +8,12 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
-
+const keys         = require('./Config/keys');
+const cors         = require('cors');
 
 mongoose.Promise = Promise;
 mongoose
-  .connect('mongodb://localhost/coffee-shop', {useMongoClient: true})
+  .connect(keys.DB, {useMongoClient: true})
   .then(() => {
     console.log('Connected to Mongo!')
   }).catch(err => {
@@ -23,7 +24,7 @@ const app_name = require('./package.json').name;
 const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.')[0]}`);
 
 const app = express();
-
+app.use(cors())
 // Middleware Setup
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -50,9 +51,11 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 app.locals.title = 'Express - Generated with IronGenerator';
 
 
-
+const coffeeRoutes = require('./routes/coffeeRoutes');
 const index = require('./routes/index');
 app.use('/', index);
+app.use('/api',coffeeRoutes);
 
-
+const PORT = process.env.PORT || 3000
+app.listen(PORT,  console.log(`listen on ${PORT}`))
 module.exports = app;

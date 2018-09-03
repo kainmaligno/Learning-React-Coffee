@@ -1,0 +1,37 @@
+[
+  {
+    "brand": "Starbucks",
+    "name": "Decaf Willow Blend",
+    "specs": [ "bright" ],
+    "origin": "Guatemala",
+    "description": "It took the gentle coaxing of our unique lighter roasting style to draw out the sparkling flavours of these Latin American and East African beans. The bright, crisp flavour and subtle complexity of this delicate brew shines through to create a breezy, deliciously easy-to-drink cup."
+  },
+  {
+    "brand": "Starbucks",
+    "name": "Veranda Blend",
+    "specs": [ "soft" ],
+    "origin": "Colombia",
+    "description": "What began as a Starbucks Veranda Blend now has a name that’s all yours. As enticing as the natural beauty of majestic Canada, this blend is dedicated to a country that’s been part of the Starbucks story since 1987."
+  },
+  {
+    "brand": "Starbucks",
+    "name": "Pike Place",
+    "specs": [ "smooth" ],
+    "origin": "Italy",
+    "description": "A tip of the hat to where we came from and what we stand for."
+  },
+  {
+    "brand": "Starbucks",
+    "name": "Verona",
+    "specs": [ "sweet" ],
+    "origin": "Italy",
+    "description": "Caffè Verona is a seductive blend of beans from Latin America and Indonesia, with a gentle touch of Italian Roast lending depth, soul and sweetness."
+  },
+  {
+    "brand": "Starbucks",
+    "name": "Komodo Dragon Blend",
+    "specs": [ "spicy" ],
+    "origin": "Indonesia",
+    "description": "And perhaps no creature is more remarkable than the world’s largest lizard: the Komodo dragon. Like that beast, this coffee is bold and surprisingly snappy."
+  }
+]
